@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="sl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinteresting - Registracija</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="SLIKE/icon.svg">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!--KNJIŽICA ZA SWEETALERT:) BREZ TEGA NE DJLA SWEETALERT -->
+</head>
+
+<body>
+
+    <div class="glavni">
+
+        <div class="logo">
+            <img src="SLIKE/icon.svg" alt="Pinterest">
+            <span>Pinteresting</span>
+        </div>
+
+        <div class="kartica">
+            <h2>Ustvari račun</h2>
+            <p>Odkrij nove ideje in jih shrani.</p>
+
+            <form id="registerForm">
+                <label for="ime">Ime</label>
+                <input type="text" id="ime" required>
+
+                <label for="email">E-poštni naslov</label>
+                <input type="email" id="email" required>
+
+                <label for="geslo">Geslo</label>
+                <input type="password" id="geslo" required>
+
+                <label for="datum">Datum rojstva</label>
+                <input type="date" id="datum" required>
+
+                <button type="submit">Registracija</button>
+            </form>
+
+            <p class="ali">ALI</p>
+            <a class="social" href="https://accounts.google.com/">
+                <img src="SLIKE/Google__G__logo.svg"
+                    alt="Google">
+                Nadaljujte z Googlom
+            </a>
+
+            <a class="social" href="https://www.facebook.com/login/">
+                <img src="SLIKE/facebook.svg" alt="Facebook">
+                Nadaljujte s Facebookom
+            </a>
+
+            <a class="social" href="https://appleid.apple.com/sign-in">
+                <img src="SLIKE/apple.svg" alt="Apple">
+                Nadaljujte z Applom
+            </a>
+
+            <hr>
+
+            <p>Že imaš račun?</p>
+            <a href="index.html">Prijavi se</a>
+        </div>
+
+        <footer>
+            <a href="https://policy.pinterest.com/en-gb/terms-of-service">Terms of Service</a>
+            <a href="https://policy.pinterest.com/en-gb/privacy-policy">Privacy Policy</a>
+            <a href="https://policy.pinterest.com/en-gb/notice-at-collection">Notice at Collection</a>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
