@@ -1,4 +1,3 @@
-
 document.getElementById("loginForm")?.addEventListener("submit", function(event) {
     event.preventDefault();
 
@@ -22,3 +21,23 @@ document.getElementById("registerForm")?.addEventListener("submit", function(eve
         confirmButtonColor: "#e60023"
     });
 });
+
+const geslo = document.getElementById("geslo");
+const toggleGeslo = document.getElementById("toggleGeslo");
+const eyeIcon = document.getElementById("eyeIcon");
+
+if (geslo && toggleGeslo && eyeIcon) {
+    toggleGeslo.addEventListener("click", function () {
+        if (geslo.type === "password") {
+            geslo.type = "text";
+            eyeIcon.src = "Slike/visible.png";
+            eyeIcon.alt = "";
+            toggleGeslo.setAttribute("aria-label", "Skrij geslo");
+        } else {
+            geslo.type = "password";
+            eyeIcon.src = "Slike/notvisible.png";
+            eyeIcon.alt = "";
+            toggleGeslo.setAttribute("aria-label", "Pokaži geslo");
+        }
+    });
+}
