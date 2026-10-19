@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pinteresting - Registracija</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="SLIKE/icon.svg">
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!--KNJIŽICA ZA SWEETALERT:) BREZ TEGA NE DJLA SWEETALERT -->
+    <link rel="icon" type="image/x-icon" href="Slike/icon.svg">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!--KNJIŽICA ZA SWEETALERT:) BREZ TEGA NE DJLA SWEETALERT -->
 </head>
 
 <body>
@@ -15,7 +16,7 @@
     <div class="glavni">
 
         <div class="logo">
-            <img src="SLIKE/icon.svg" alt="Pinterest">
+            <img src="Slike/icon.svg" alt="Pinterest">
             <span>Pinteresting</span>
         </div>
 
@@ -31,28 +32,35 @@
                 <input type="email" id="email" required>
 
                 <label for="geslo">Geslo</label>
-                <input type="password" id="geslo" required>
+
+                <div class="password-container">
+                    <input type="password" id="geslo" name="geslo" required>
+
+                    <button type="button" id="toggleGeslo" class="eye-button" aria-label="Pokaži geslo">
+                        <img src="Slike/notvisible.png" alt="" id="eyeIcon">
+                    </button>
+                </div>
+
 
                 <label for="datum">Datum rojstva</label>
                 <input type="date" id="datum" required>
 
-                <button type="submit">Registracija</button>
+                <button type="submit" class="regi">Registracija</button>
             </form>
 
             <p class="ali">ALI</p>
             <a class="social" href="https://accounts.google.com/">
-                <img src="SLIKE/Google__G__logo.svg"
-                    alt="Google">
+                <img src="Slike/Google__G__logo.svg" alt="Google">
                 Nadaljujte z Googlom
             </a>
 
             <a class="social" href="https://www.facebook.com/login/">
-                <img src="SLIKE/facebook.svg" alt="Facebook">
+                <img src="Slike/facebook.svg" alt="Facebook">
                 Nadaljujte s Facebookom
             </a>
 
             <a class="social" href="https://appleid.apple.com/sign-in">
-                <img src="SLIKE/apple.svg" alt="Apple">
+                <img src="Slike/apple.svg" alt="Apple">
                 Nadaljujte z Applom
             </a>
 
